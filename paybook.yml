@@ -18,7 +18,7 @@
 
     - name: copy index.html
 
-      template: src=/test/devops/index.html dest=/usr/share/nginx/html/index.html mode=0664
+      template: src=/test/site/index.html dest=/usr/share/nginx/html/index.html mode=0664
 
     - name: restart nginx
     
