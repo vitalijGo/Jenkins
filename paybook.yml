@@ -10,7 +10,7 @@
 
     - name: copy nginx config file
 
-      copy: src=/root/Jenkins/nginx.conf dest=/etc/nginx/sites-available/default
+      copy: src=/root/test/code/nginx.conf dest=/etc/nginx/sites-available/default
 
     - name: enable configuration
 
@@ -18,7 +18,7 @@
 
     - name: copy index.html
 
-      template: src=/root/Jenkins/index.html dest=/usr/share/nginx/html/index.html mode=0664
+      template: src=/root/test/site/index.html dest=/usr/share/nginx/html/index.html mode=0664
 
     - name: restart nginx
     
